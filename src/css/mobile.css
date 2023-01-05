@@ -1,0 +1,97 @@
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 576px; }
+
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    gap: 15px;
+    margin-bottom: 3px; }
+    .header-logo {
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-left: 0px;
+      padding-top: 5px; }
+    .header-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 20px; }
+
+  .header-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px; }
+    .header-media .inCart {
+      left: 60px;
+      top: 5px;
+      display: none; }
+
+  .slider {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 100px; }
+    .slider__images {
+      position: relative;
+      width: 500px;
+      height: 250px; }
+
+  .changeBook {
+    display: none; }
+
+  .topBooks {
+    display: none; }
+
+  .books {
+    margin-top: 40px; }
+    .books .book-list {
+      width: 500px;
+      height: 120px;
+      margin: 0 auto; }
+      .books .book-list ul {
+        padding-left: 0px;
+        margin: 0px;
+        padding-top: 20px; }
+      .books .book-list li {
+        display: inline-block;
+        padding: 3px;
+        margin: 5px; }
+        .books .book-list li.pressed {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 15px;
+          padding-right: 0px; }
+
+  .result {
+    margin-left: 60px;
+    margin-top: 160px; }
+
+  .output {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+/*# sourceMappingURL=mobile.css.map */

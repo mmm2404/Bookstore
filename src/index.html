@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output/main.css">
+    <!-- <link rel="stylesheet" href="./css/mobile.css"> -->
+    <script src="https://kit.fontawesome.com/bfe4c3fabb.js" crossorigin="anonymous"></script>
+    <title>Bookstore</title>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <div class="header">
+            <img class="header-logo" src="./images/Bookshop.jpg" alt="Logo image" width="129" height="29" class="logo">
+            <nav class="header-nav">
+                <a href="#" class="header-nav__main">BOOKS</a>
+                <a href="#" class="header-nav__audio">AUDIOBOOKS</a>
+                <a href="#" class="header-nav__gifts">STATIONARY & GIFTS</a>
+                <a href="#" class="header-nav__blog">BLOG</a>
+            </nav>
+            <div class="header-media">
+                <img src="./images/user.jpg" width="12" height="15" alt="Icon for personal information"
+                    class="header-media__user">
+                <img src="./images/search.jpg" width="13" height="13" alt="Icon for search option"
+                    class="header-media__search">
+                <img src="./images/shop bag.jpg" width="13" height="13" alt="Icon for checkout bag"
+                    class="header-media__bag">
+                <div class="inCart"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slider__images"></div>
+            <div class="slider__dots"></div>
+        </section>
+        <div class="changeBook">
+            <div class="changeBook-two">Change old book on new<a title="press to go on another page" href="#"
+                    alt="arrow link"><svg width="57" height="14" viewBox="0 0 57 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                        <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                    </svg>
+                </a></div>
+        </div>
+        <div class="topBooks">
+            <div class="topBooks-two">top 100 books 2022<a title="press to go on another page" href="#"
+                    alt="arrow link"><svg width="57" height="14" viewBox="0 0 57 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                        <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+                    </svg>
+                </a></div>
+        </div>
+        <section class="books">
+            <div class="book-list">
+                <ul>
+                    <li><span>Architecture</span></li>
+                    <li><span>Art & Fashion</span></li>
+                    <li><span>Biography</span></li>
+                    <li><span>Business</span></li>
+                    <li><span>Crafts & Hobbies</span></li>
+                    <li><span>Drama</span></li>
+                    <li><span>Fiction</span></li>
+                    <li><span>Food & Drink</span></li>
+                    <li><span>Health & Wellbeing</span></li>
+                    <li><span>History & Politics</span></li>
+                    <li><span>Humor</span></li>
+                    <li><span>Poetry</span></li>
+                    <li><span>Psychology</span></li>
+                    <li><span>Science</span></li>
+                    <li><span>Technology</span></li>
+                    <li><span>Travel & Maps</span></li>
+                </ul>
+            </div>
+            <div class="result">
+                <div class="output" id="output"></div>
+                <div class="moreBooks"><button class="button">load more</button></div>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+</html>
