@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+
   "devDependencies": {
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",

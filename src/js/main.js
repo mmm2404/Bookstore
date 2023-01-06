@@ -18,7 +18,7 @@ function pageLoaded() {
 
 //параметры запроса
   let query = {
-    q: "",
+    q: " ",
     key: apiKey,
     printType: 'books',
     langRestrict: 'en',
