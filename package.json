@@ -1,7 +1,6 @@
 {
   "name": "bookstore",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "devDependencies": {
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -32,5 +30,14 @@
   },
   "dependencies": {
     "saas": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmm2404/Bookstore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmm2404/Bookstore/issues"
+  },
+  "homepage": "https://github.com/mmm2404/Bookstore#readme",
+  "description": ""
 }
