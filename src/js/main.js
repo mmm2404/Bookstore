@@ -4,10 +4,8 @@ import "./slider.js";
 
 
 function pageLoaded() {
-  localStorage.clear();
-  const container = document.querySelector(".output");
-  container.innerHTML = localStorage.getItem('books');
 
+  const container = document.querySelector(".output");
   const apiKey = "AIzaSyDZhaHR0ZJZG0yGQifAm5qN1oRmHWRWKeo";
   const apiURL = "https://www.googleapis.com/books/v1/volumes?"; 
   const moreBtn = document.querySelector('.moreBooks');
@@ -83,7 +81,7 @@ let params = new URLSearchParams(query)
 
      
       container.appendChild(book);
-      localStorage.setItem('books',container.innerHTML)
+  
       moreBtn.style.display = "block";
 
 
@@ -111,7 +109,7 @@ let params = new URLSearchParams(query)
             event.target.classList.add('addNumber');
            
         }
-       
+        localStorage.setItem('incart',cart.innerHTML)
       }      
 
  book.addEventListener('click', addToCart);
@@ -180,7 +178,8 @@ function loadMore(){
   
 
   function updateDisplay() {
-
+    let cart = document.querySelector('.inCart');
+    cart.innerHTML = localStorage.getItem('incart');
     while (container.firstChild) {
       container.removeChild(container.firstChild);
      moreBtn.style.display = "none";
