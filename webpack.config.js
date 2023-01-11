@@ -11,6 +11,11 @@ module.exports = {
     filename: 'main.js',
   },
   mode: 'development',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "output"),
+    }
+  },
   plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
@@ -27,4 +32,5 @@ module.exports = {
       new CssMinimizerPlugin(),
     ],
   },
-};
+
+}

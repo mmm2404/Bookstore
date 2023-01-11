@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ \"./src/js/main.js\");\n/* harmony import */ var _mobile_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mobile.scss */ \"./src/mobile.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://bookstore/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ \"./src/js/main.js\");\n/* harmony import */ var _mobile_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mobile.scss */ \"./src/mobile.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://bookstore/./src/index.js?");
 
 /***/ }),
 
