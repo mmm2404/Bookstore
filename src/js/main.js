@@ -1,5 +1,6 @@
 
 import "./slider.js";
+import "./toTop.js";
 
 
 
@@ -67,7 +68,10 @@ let params = new URLSearchParams(query)
    //создаем карточки
       let book = document.createElement("div");
       book.innerHTML = `<div class="card">
+      <div class="imgContainer">
       <img class="card-image" loading="lazy" src="${bookCover}"></img>
+      <img class="imgPreloader" src="./images/Book.gif"/>
+      </div>
       <div style="margin-left:36px">
       <div class="card-author">${bookAuthor}</div>
       <div class="card-title">${bookTitle}</div>

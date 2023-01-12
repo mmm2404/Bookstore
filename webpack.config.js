@@ -2,6 +2,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 
@@ -14,9 +15,11 @@ module.exports = {
   devServer: {
     static: {
       directory: path.join(__dirname, "output"),
-    }
+    },
+  
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin()],
   module: {
     rules: [
       {

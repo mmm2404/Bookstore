@@ -125,6 +125,9 @@ main {
   text-transform: uppercase;
   color: #5C6A79;
 }
+.header-nav a:hover {
+  transform: scale(0.7);
+}
 
 .header-media {
   display: flex;
@@ -276,6 +279,9 @@ main {
   margin-bottom: 23px;
   cursor: pointer;
 }
+.book-list ul li:hover {
+  transform: scale(1.2);
+}
 .book-list ul li.pressed {
   list-style-type: initial;
   color: #756AD3;
@@ -369,6 +375,25 @@ main {
   color: #1C2A39;
 }
 
+.imgContainer {
+  position: relative;
+}
+
+.imgContainer img.card-image {
+  position: relative;
+  z-index: 5000;
+}
+
+img.imgPreloader {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #E5E5E5;
+  top: 45%;
+  left: 45%;
+  z-index: 4000;
+}
+
 .button {
   width: 176px;
   height: 45px;
@@ -421,4 +446,41 @@ main {
 .stars-inner::before {
   content: "\f005\f005\f005\f005\f005";
   color: #f8ce0b;
+}
+
+#toTop {
+  position: fixed;
+  display: inline-block;
+  bottom: 30px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  background: #9E98DC;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 25px;
+}
+#toTop:hover {
+  background: #FF8FE6;
+}
+#toTop svg {
+  position: relative;
+  top: 12px;
+  right: -1px;
+  fill: black;
+  transition: all 0.3s ease-in-out;
+}
+#toTop.show {
+  opacity: 1;
+  visibility: visible;
+  right: 2%;
+}
+#toTop:hover svg {
+  cursor: pointer;
+  fill: black;
+  transition: all 0.3s ease-in-out;
 }

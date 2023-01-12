@@ -1,9 +1,10 @@
 $mainFont: 'Montserrat';
 $secondFont: 'Open Sans';
-$background: #E5E5E5;;
+$background: #E5E5E5;
+;
 
 
-body,
+body, 
 main {
     margin: 0px;
     padding: 0px;
@@ -44,6 +45,11 @@ main {
             line-height: 12px;
             text-transform: uppercase;
             color: #5C6A79;
+            &:hover{
+                transform: scale(0.7);
+            }
+    
+
 
         }
 
@@ -70,7 +76,7 @@ main {
         z-index: 4000;
         left: 113px;
         top: 5px;
-        display:none;
+        display: none;
 
     }
 }
@@ -211,7 +217,7 @@ main {
         &span {
             color: #5C6A79;
 
-            &.pressed{
+            &.pressed {
                 color: #1C2A39;
             }
 
@@ -223,6 +229,10 @@ main {
             text-align: start;
             margin-bottom: 23px;
             cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+            }
 
 
             &.pressed {
@@ -277,8 +287,10 @@ main {
         &-image {
             width: 212px;
             height: 307px;
-            -webkit-box-shadow: -2px 17px 15px -5px rgba(0,0,0,0.62); 
-            box-shadow: -2px 17px 15px -5px rgba(0,0,0,0.62);
+
+      
+            -webkit-box-shadow: -2px 17px 15px -5px rgba(0, 0, 0, 0.62);
+            box-shadow: -2px 17px 15px -5px rgba(0, 0, 0, 0.62);
 
         }
 
@@ -342,6 +354,23 @@ main {
 
 }
 
+
+.imgContainer {
+    position: relative;
+}
+.imgContainer img.card-image {
+    position: relative;
+    z-index: 5000;
+}
+img.imgPreloader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: $background;
+    top: 45%;
+    left: 45%;
+    z-index: 4000;
+}
 .button {
     width: 176px;
     height: 45px;
@@ -353,11 +382,11 @@ main {
     line-height: 10px;
     text-transform: uppercase;
     color: #4C3DB2;
-    background:$background;
+    background: $background;
     cursor: pointer;
 }
 
-.minus{
+.minus {
     border: 1px solid #EEEDF5;
     color: #5C6A79;
 }
@@ -396,4 +425,48 @@ main {
 .stars-inner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     color: #f8ce0b;
+}
+
+#toTop {
+    position: fixed;
+    display: inline-block;
+    bottom: 30px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    background: #9E98DC;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    margin-bottom: 25px;
+
+
+    &:hover {
+        background: #FF8FE6;
+    }
+
+
+    & svg {
+        position: relative;
+        top: 12px;
+        right: -1px;
+        fill: black;
+        transition: all .3s ease-in-out;
+    }
+
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        right: calc(2%);
+    }
+
+    &:hover svg {
+        cursor: pointer;
+        fill: black;
+        transition: all .3s ease-in-out;
+    }
 }
